@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+body{background: #333;font-size: 100%;}
+img{
+	height: auto;
+	max-width: 100%;
+}
+.centrado{margin: 0 auto;
+ width: 980px; 
+ background: #F8F1F1;
+}
+.sup{
+    background-color: #F3F3F3;
+}
+.columuno{
+	display:inline-block;
+	width:  300px;
+	--background-color: #F3F3F3;
+	vertical-align: top; /*se ajusta al tope*/
+}
+.columdos{
+	display:inline-block;
+	width: 370px;
+	--background: red;
+	vertical-align: top;
+}
+.columtres{
+	display:inline-block;
+	width: 300px;
+	--background: blue;
+	vertical-align: top;
+}
+
+.columcat{
+	display:inline-block;
+	width: 30%;
+	--background: yellow;
+	vertical-align: top;
+}
+.columpro{
+	display:inline-block;
+	width: 69%;
+	--background: blue;
+	vertical-align: top;
+}
+
+.productos{
+	display:inline-block;
+	width: 32.8%;
+	--background: green;
+	vertical-align: top;
+    text-align: center;
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0px;
+    display: flex;/*en lugar de inline*/
+}
+.menu li a{
+    text-decoration: none;
+    color: #333333;
+    padding: 0px 20px;
+}
+#btnMenu{
+    display: none;
+}
+header label{
+    display: none;
+}
+.companyLeft{
+    width: 485px;
+    --background-color: green;
+    display: inline-block;
+}
+.companyRight{
+    width: 485px;
+    --background-color: darkblue;
+    display: inline-block;
+}
+.margen{
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: justify;
+}
+.paragraph{
+    font-family:  FreeMono, monospace;
+    font-size: 14px;
+}
+.title{
+    font-family: Andale Mono, monospace;
+}
+.who img{
+    --border: solid 10px;
+    margin-left: 30%;
+}
+.caja{
+    display: block;
+    width: 80%;
+    height 35px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.btn{
+    margin: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 40px;
+    font-size: 2em;
+    border: 0px;
+    outline: none;
+    background-color: #3073A6;
+    color: #FFF;
+    border-radius: 5px;
+    text-decoration: none;
+    --Eldearribaesextra
+}
+.product{
+    border: solid 10px;
+    width: 960px;
+}
+.productImage{
+    border: solid 10px green;
+    width: 47.7%;
+    display: inline-block;
+}
+.price{
+    border: solid 10px blue;
+    width: 47.7%;
+    display: inline-block;
+}
+.price ul{
+    list-style-type: none;
+    text-align: left;
+    font-size: 2em;
+    margin-left: 10px;
+}
+.description{
+    border: solid 10px red;
+}
+/*if res. 480*/
+@media only screen and (max-width:480px){
+    .centrado{
+        width: 95%;
+        background-color: #F8F1F1;
+    }
+    .productos{
+        display: block;
+        width: 100%;
+    }
+    .columcat{
+        display: block;
+        width: 100%;
+    }
+    .columpro{
+        display: block;
+        width: 100%;
+    }
+    .imgpro{
+        width: 90%;
+    }
+    .columuno{
+        display: block;
+        width: 100%;
+    }
+    .columdos{
+        display: block;
+        width: 100%;
+    }
+    .columtres{
+        display: block;
+        width: 100%;
+    }
+    /*despues de checked simbolo de encima de la ñ*/
+    #btnMenu:checked ~.menu{
+        margin: 0px;
+    }
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        margin-top: -500px;
+        background: green;
+        width: 90%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li a{
+        color: white;
+    }
+    .menu li{
+        border-top: 1px solid #FFF;
+        padding: 15px 20px;
+    }
+    .companyLeft{
+    width: 100%;
+    --background-color: green;
+    display: block;
+}
+.companyRight{
+    width: 100%;
+    --background-color: darkblue;
+    display: block;
+}
+}
