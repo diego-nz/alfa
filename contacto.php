@@ -27,7 +27,7 @@
                         ."Comentarios ".$_POST["txtObs"];
                     $destinatario="nunez.guzman@gmail.com";
                     $remitente="From ventas@diego.com.mx";
-                    
+
                         //mail(destino,asunto,mensaje)
                     //mail($destinatario,$asunto,$mensaje,$remitente);
                 echo "Gracias en breve un representante de ventas se pondrá en contacto";

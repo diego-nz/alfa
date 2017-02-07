@@ -13,7 +13,6 @@ for($i = 0;$i<=5;$i++){
     $x2 = rand(0,$ancho);
     $y1 = rand(0,$alto);
     $y2 = rand(0,$alto);
-    
     imageline($imagen, $x1, $y1, $x2, $y2, $rojo);
 }
 header("Content-type:image/jpeg");
